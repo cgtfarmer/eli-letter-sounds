@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Page Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <div>
+      <button onclick="draw();">Draw</button>
+      <button onclick="toggleOptions();">Show/Hide</button>
+    </div>
+
+    <div style="margin-top: 1rem;">
+      <button onclick="selectAll();">Select All</button>
+      <button onclick="deselectAll();">Deselect All</button>
+      <button onclick="challenging();">Challenging</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="options">
+    </div>
+
+    <div id="display" style="text-align: center; font-size: 400px;">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
