@@ -8,43 +8,26 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="./index.html">Home</a>
-    </nav>
+    <div>
+      <button onclick="draw();">Draw</button>
+      <button onclick="toggleOptions();">Show/Hide</button>
+    </div>
 
-    <h1>Page Header</h1>
+    <div style="margin-top: 1rem;">
+      <button onclick="selectAll();">Select All</button>
+      <button onclick="deselectAll();">Deselect All</button>
+      <button onclick="challenging();">Challenging</button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Section 1</h2>
+    <div id="options">
+    </div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim augue sed hendrerit viverra. Nulla sodales lacinia nisl vel mattis. Fusce ultrices tristique diam quis porttitor. Maecenas magna sem, laoreet at convallis eget, faucibus id nisi. Cras nulla metus, tincidunt at dolor porta, malesuada tempor urna. Vestibulum pharetra massa at facilisis lobortis. Maecenas viverra justo orci, laoreet fringilla sem facilisis consectetur. Aliquam ac ultricies tortor. Etiam vel risus scelerisque, lobortis lectus in, maximus nibh. Phasellus efficitur scelerisque eros, ut varius diam consectetur non. Quisque id porta ante. Sed lacus sapien, malesuada eu porta id, ultrices at mauris. Cras ac scelerisque odio. Ut maximus lacus ultricies orci dictum, id pharetra urna lobortis. Duis quis sodales orci.</p>
-    </section>
-
-    <hr>
-
-    <section>
-      <h2>Section 2</h2>
-
-      <div class="form-input">
-        <span>Name:</span>
-
-        <input id="name-input" type="text">
-      </div>
-
-      <div class="form-input">
-        <button onclick="doTheThing();">Go</button>
-      </div>
-
-      <div class="form-input">
-        <span>Output:</span>
-
-        <span id="greeting-output"></span>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
+    <div id="display" style="text-align: center; font-size: 400px;">
+    </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
